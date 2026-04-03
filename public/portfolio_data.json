@@ -1,0 +1,771 @@
+{
+  "meta": {
+    "title": "KEFALOS OS",
+    "subtitle": "Portfolio Command Center",
+    "lastUpdated": "Sun Mar 29 · Midday",
+    "activeProjects": 26,
+    "supabaseTables": 98,
+    "netlifySites": 8
+  },
+  "topbar": {
+    "stats": [
+      { "value": "30", "label": "Projects" },
+      { "value": "6", "label": "Live", "color": "green" },
+      { "value": "14", "label": "Building", "color": "blue" },
+      { "value": "6", "label": "Planning", "color": "yellow" },
+      { "value": "2", "label": "Blocked", "color": "red" }
+    ],
+    "statusDate": "Mar 30 Monday Morning (W14)",
+    "alerts": [
+      { "type": "red", "text": "OSRM 502 Bad Gateway — container restart needed (persists from Mar 29)" },
+      { "type": "red", "text": "BRO down (HTTP 000) — port 9000 unreachable (persists from Mar 28)" },
+      { "type": "yellow", "text": "~25 tasks BUILT on disk across 8 projects — deploy bottleneck is #1 blocker" },
+      { "type": "green", "text": "FastAPI 200 ✅ Valhalla 200 ✅ Catering 200 ✅ Paideia 200 ✅" },
+      { "type": "green", "text": "Monday Fresh Week: W14 master sprint plan generated" }
+    ]
+  },
+  "focusZone": {
+    "mode": "Deep Work",
+    "updated": "Updated Mon Mar 30 · 7AM",
+    "activeWork": [
+      {
+        "brand": "nivio",
+        "name": "Marketing_Nivio",
+        "status": "BOTH LIVE",
+        "statusColor": "green",
+        "desc": "293 contacts in active sequences (211 Nivio BRO + 82 Axio). All 11 emails polished. Monitor deliverability.",
+        "action": "Monitor sends: Nivio → Email 3, Axio → Email 1. Source 2 missing emails.",
+        "projectId": "marketing"
+      },
+      {
+        "brand": "gg",
+        "name": "Catering",
+        "status": "65%",
+        "statusColor": "green",
+        "desc": "Referral + PWA + EzCater webhook + Checkback bridge all shipped. 2 Kosta tasks remain.",
+        "action": "Toast/EzCater live sync + pipeline test",
+        "projectId": "catering"
+      },
+      {
+        "brand": "gg",
+        "name": "Ad-Manager",
+        "status": "0% (BUILT)",
+        "statusColor": "red",
+        "desc": "4 features BUILT on disk: dayparting, geofencing, menu correlation, retargeting. All compile clean.",
+        "action": "Git push + Netlify deploy → instant 100%",
+        "projectId": "admanager"
+      }
+    ],
+    "pipeline": {
+      "title": "Nivio Sales Pipeline (AC)",
+      "items": [
+        {
+          "name": "3 Active Deals",
+          "status": "OVERDUE",
+          "statusColor": "yellow",
+          "desc": "Danny Rodriguez — Sentinel/P66 · Qualified\nThomas Kuhnle — Kuhnle Brothers · Discovery\nJoshua Burch — Benchmark · Discovery (needs email)",
+          "blocker": "All 3 overdue — call this week"
+        },
+        {
+          "name": "4 Warm Leads",
+          "status": "FOLLOW-UP",
+          "statusColor": "",
+          "desc": "Matt Brackin (Martin Transport) · Chad VanAllen (eProd)\nChris Scavone (Gulfmark) · Charles Millsap (Sentinel)",
+          "action": "All tagged warm-direct-outreach in AC"
+        }
+      ]
+    },
+    "stats": [
+      { "value": "517", "label": "AC Contacts" },
+      { "value": "512", "label": "In Hum Sequence" },
+      { "value": "62", "label": "In Axio Sequence" },
+      { "value": "3", "label": "Active Deals" },
+      { "value": "4", "label": "Warm Leads" },
+      { "value": "7/7", "label": "Hum Emails Live", "color": "green" },
+      { "value": "0/3", "label": "Axio Emails Live", "color": "yellow" }
+    ]
+  },
+  "markets": [
+    {
+      "id": "us",
+      "name": "US Market",
+      "badge": "11 Projects",
+      "badgeColor": "blue",
+      "brands": [
+        {
+          "id": "gg",
+          "name": "Grecian Gyro",
+          "subtitle": "Food + hospitality ops · Atlanta · 6 locations · Shared Supabase",
+          "color": "#d4a843",
+          "projects": [
+            {
+              "id": "catering",
+              "name": "Catering",
+              "icon": "🍽",
+              "desc": "Event catering booking + operations · Live on Netlify",
+              "statusDot": "green",
+              "badges": [{ "text": "Live ✓", "type": "deploy" }, { "text": "Sprint 4", "type": "build" }],
+              "sprintPct": 83,
+              "sprintColor": "green",
+              "sprintLabel": "Sprint 4 — Referral Program + PWA Polish",
+              "sprintProgress": "10/12",
+              "nextAction": "EzCater fixed (2026-03-23) · 10/12 done · 2 Kosta-blocked remain",
+              "nextActionStatus": "Active",
+              "agentPrompt": "Sprint 4 — Referral Program + PWA Polish. Continue from where we left off. EzCater webhook registered (18/24 events). Remaining: 1) Toast/EzCater live sync validation 2) Catering feedback → Checkback pipeline test",
+              "tasks": [
+                { "done": true, "text": "Referral sharing system + unique codes" },
+                { "done": true, "text": "Referral tracking handler + bonus points" },
+                { "done": true, "text": "Referral UI in account modal" },
+                { "done": true, "text": "PWA manifest + service worker" },
+                { "done": true, "text": "Hero section + menu cards polish" },
+                { "done": true, "text": "Loyalty/referral modal redesign" },
+                { "done": true, "text": "Referral localhost bug fixed (uses process.env.URL)" },
+                { "done": true, "text": "Checkback webhook bridge (non-blocking POST)" },
+                { "done": true, "text": "Git repo HEAD fixed + auto-deploy on main" },
+                { "done": true, "text": "EzCater webhook registration (18/24 events)" },
+                { "done": false, "text": "Toast/EzCater live sync validation", "owner": "agent" },
+                { "done": false, "text": "Catering feedback → Checkback pipeline test", "owner": "agent" }
+              ],
+              "sprintsDone": 3
+            },
+            {
+              "id": "checkback",
+              "name": "Checkback",
+              "icon": "💬",
+              "desc": "Guest feedback + reputation mgmt · Twilio SMS · Vercel Pro",
+              "statusDot": "green",
+              "badges": [{ "text": "MVP Live ✓", "type": "deploy" }, { "text": "Sprint 3 Active", "type": "ship" }],
+              "sprintPct": 0,
+              "sprintColor": "red",
+              "sprintLabel": "Sprint 3 — Production Hardening + Toast Test",
+              "sprintProgress": "0/5",
+              "nextAction": "checkback-tau.vercel.app · Sprint 3: 0/5 (Sentry + analytics built but not deployed)",
+              "nextActionStatus": "Live",
+              "infoBar": "Replaces OvationReviewer · 'Operational intelligence' positioning vs Ovation's 7-screen approach",
+              "agentPrompt": "Sprint 3 — Production Hardening + Toast Test for Checkback. Sentry and Review analytics are BUILT on disk — commit and deploy both. Then run E2E Toast webhook test.",
+              "tasks": [
+                { "done": false, "text": "Push auth fix (stats API headers + LocationContext)", "owner": "kosta" },
+                { "done": false, "text": "E2E Toast webhook test → feedback queued → SMS sent", "owner": "agent" },
+                { "done": false, "text": "Catering → Checkback feedback pipeline test", "owner": "kosta" },
+                { "done": false, "text": "Sentry — BUILT on disk, needs commit + deploy + verify", "owner": "agent" },
+                { "done": false, "text": "Review analytics — BUILT on disk, needs commit + deploy + verify", "owner": "agent" }
+              ],
+              "sprintsDone": 6
+            },
+            {
+              "id": "sidework",
+              "name": "Sidework",
+              "icon": "💼",
+              "desc": "Staff scheduling + shift management · Sling API · 154 staff synced",
+              "statusDot": "blue",
+              "badges": [{ "text": "Building", "type": "build" }, { "text": "DB Live ✓", "type": "deploy" }],
+              "sprintPct": 71,
+              "sprintColor": "#d4a843",
+              "sprintLabel": "Sprint 4 — Sling Sync + Deploy",
+              "sprintProgress": "5/7",
+              "nextAction": "Core tables live · Task mgmt + shifts built · Deploy + seed data next",
+              "nextActionStatus": "1h",
+              "agentPrompt": "Sprint 4 — Sling Sync + Deploy for Sidework. Deploy Next.js app to Vercel. staff_assignments backfill needed (shifts synced but 0 assignments).",
+              "tasks": [
+                { "done": true, "text": "Core tables migration applied to GG Supabase" },
+                { "done": true, "text": "Task management page: daily task list per shift" },
+                { "done": true, "text": "Shift template system: save/load weekly templates" },
+                { "done": true, "text": "Shift calendar view: color-coded, mobile-optimized" },
+                { "done": true, "text": "Task cards + bottom navigation design" },
+                { "done": false, "text": "Deploy Next.js app to Vercel", "owner": "agent" },
+                { "done": false, "text": "Seed test data: 2 locations, 5 staff, 3 templates", "owner": "kosta" }
+              ],
+              "sprintsDone": 3
+            },
+            {
+              "id": "mise",
+              "name": "MISE",
+              "icon": "👨‍🍳",
+              "desc": "LMS + training platform · Outcome badges in Supabase · Prototype built",
+              "statusDot": "blue",
+              "badges": [{ "text": "Building", "type": "build" }, { "text": "W15 Active", "type": "build" }],
+              "sprintPct": 85,
+              "sprintColor": "#d4a843",
+              "sprintLabel": "W15 — Outcome Badges + Skills Matrix + SMS Onboarding",
+              "sprintProgress": "22/26",
+              "nextAction": "Choose SMS provider (Twilio vs Vonage) · Set env vars for cron activation",
+              "nextActionStatus": "10m👤",
+              "agentPrompt": "W15 — Outcome Badges + Skills Matrix for MISE. SMS Provider Integration (Twilio placeholder) ready to wire. Set env vars for cron activation after SMS decision.",
+              "tasks": [
+                { "done": true, "text": "Outcome-tracking schema in Supabase (gig_outcomes + gig_outcome_badges)" },
+                { "done": true, "text": "5 Outcome Badge Types seeded with precise triggers" },
+                { "done": true, "text": "Skills Matrix page (/gigops/skills-matrix — proficiency grid)" },
+                { "done": true, "text": "Leaderboard upgraded with 2x outcome badge weighting + icons" },
+                { "done": true, "text": "Badge Trigger System (3 DB functions + 1 trigger deployed)" },
+                { "done": true, "text": "Cross-module event infra (shared_events + module_hooks + emit functions)" },
+                { "done": true, "text": "XP Award Endpoints (idempotent, multiplied, balance sync)" },
+                { "done": true, "text": "Sidework Event Consumer + Cron Job" },
+                { "done": true, "text": "Magic Link Flow + Progressive Profile + Onboarding Routes" },
+                { "done": true, "text": "Database: password_deferred_until field + admin client fix" },
+                { "done": false, "text": "SMS Provider Integration (Twilio placeholder)", "owner": "kosta" },
+                { "done": false, "text": "Set env vars for cron activation", "owner": "kosta" }
+              ],
+              "sprintsDone": 4
+            },
+            {
+              "id": "ggconnect",
+              "name": "GGConnect",
+              "icon": "📞",
+              "desc": "VoIP IVR · Telnyx TeXML · ElevenLabs · Lightsail 100.25.192.196",
+              "statusDot": "blue",
+              "badges": [{ "text": "Building", "type": "build" }, { "text": "IVR Live ✓", "type": "deploy" }],
+              "sprintPct": 60,
+              "sprintColor": "#d4a843",
+              "sprintLabel": "Sprint 2 — Messaging + DID + 10DLC (W12)",
+              "sprintProgress": "3/5",
+              "nextAction": "Messaging profile created · Call flow + location cards designed · DID + 10DLC need Kosta",
+              "nextActionStatus": "Blocked",
+              "blocker": "DNS (phone.greciangyro.com) · Hardware (Grandstream) · Port decision (Nick) · DID purchase · 10DLC",
+              "agentPrompt": "Sprint 2 — Messaging + DID + 10DLC for GGConnect. Prerequisites: DID purchased (404/770 area code), 10DLC brand registered. Then wire messaging profile to DID.",
+              "tasks": [
+                { "done": true, "text": "Telnyx Messaging Profile created (ID: 40019cf5…)" },
+                { "done": true, "text": "Call flow visualizer (React component, responsive)" },
+                { "done": true, "text": "Location cards (6 stores, status badges, copy-to-clipboard)" },
+                { "done": false, "text": "Purchase main IVR DID (404/770 area code)", "owner": "kosta" },
+                { "done": false, "text": "Register brand on 10DLC portal", "owner": "kosta" }
+              ],
+              "sprintsDone": 1
+            },
+            {
+              "id": "smartwatch",
+              "name": "SmartWatch",
+              "icon": "📷",
+              "desc": "AI video audit · DTiQ replacement · RTSP + Claude Vision",
+              "statusDot": "purple",
+              "badges": [{ "text": "Building", "type": "build" }, { "text": "DB Live ✓", "type": "deploy" }],
+              "sprintPct": 40,
+              "sprintColor": "#9f7aea",
+              "sprintLabel": "Sprint 1 — Foundation + Edge Box",
+              "sprintProgress": "2/5",
+              "nextAction": "Toast webhook live · Next: Camera budget decision (Kosta)",
+              "nextActionStatus": "5m",
+              "agentPrompt": "Sprint 1 — Foundation + Edge Box for SmartWatch. Camera hardware budget decision needed: Reolink ($630) vs Axis ($1,600) for Snellville. Check DTiQ contract terms at Tucker.",
+              "tasks": [
+                { "done": true, "text": "Supabase migration: 6 tables applied (cameras, transactions, frames, audits, audit_scores, anomalies)" },
+                { "done": true, "text": "Toast webhook receiver — HMAC verification, 6 anomaly flags, upsert to sw_transactions + sw_anomalies" },
+                { "done": false, "text": "Camera hardware budget: Reolink ($630) vs Axis ($1,600) for Snellville", "owner": "kosta" },
+                { "done": false, "text": "Check DTiQ contract terms at Tucker (cancellation/early termination)", "owner": "kosta" },
+                { "done": false, "text": "Confirm Toast API webhook access enabled for GG account", "owner": "kosta" }
+              ],
+              "sprintsDone": 0
+            },
+            {
+              "id": "admanager",
+              "name": "Ad-manager",
+              "icon": "📊",
+              "desc": "Full Ad Control Center · Restaurant Intelligence · Dayparting · Geofencing",
+              "statusDot": "green",
+              "badges": [{ "text": "Live on Netlify ✓", "type": "deploy" }, { "text": "Restaurant Intel BUILT", "type": "build" }],
+              "sprintPct": 0,
+              "sprintColor": "yellow",
+              "sprintLabel": "Sprint 12 — Restaurant Intelligence",
+              "sprintProgress": "0/4",
+              "nextAction": "4 Restaurant Intel features BUILT · git push to deploy",
+              "nextActionStatus": "5m👤",
+              "blocker": "Google Ads Basic API access — submitted, ETA any day now",
+              "agentPrompt": "Sprint 12 — Restaurant Intelligence for Ad-manager. 4 features BUILT on disk (dayparting, geofencing, menu correlation, retargeting). Run git push + Netlify deploy.",
+              "tasks": [
+                { "done": false, "text": "Dayparting engine — hourly bid optimization per store (BUILT)", "owner": "kosta" },
+                { "done": false, "text": "Competitor geofencing — 6 locations mapped (BUILT)", "owner": "kosta" },
+                { "done": false, "text": "Menu-to-campaign correlation — ROAS by item (BUILT)", "owner": "kosta" },
+                { "done": false, "text": "Retargeting segment automation — 6 audiences (BUILT)", "owner": "kosta" }
+              ],
+              "sprintsDone": 11
+            }
+          ]
+        },
+        {
+          "id": "nivio",
+          "name": "Nivio",
+          "subtitle": "Logistics intelligence · EC2 54.86.33.89 · t3.large",
+          "color": "#3b82f6",
+          "projects": [
+            {
+              "id": "axio",
+              "name": "Axio",
+              "icon": "🚛",
+              "desc": "Enterprise route optimization · 7/7 engines · Phase 2 Intelligence live",
+              "statusDot": "green",
+              "badges": [{ "text": "Phase 2 Live ✓", "type": "deploy" }, { "text": "Week 4 Active", "type": "build" }],
+              "sprintPct": 38,
+              "sprintColor": "green",
+              "sprintLabel": "Week 4 — 1.2 Basin + 1.4 PostGIS + 1.5B EIA (sprint file: 17/45)",
+              "sprintProgress": "17/45",
+              "nextAction": "1.5A COMPLETE · 1.2 basin/well endpoints + 1.4 PostGIS migration + 1.5B EIA in progress",
+              "nextActionStatus": "Active",
+              "agentPrompt": "Week 4 — Basin + PostGIS + EIA for Axio. Sprint file at 17/45. Next tasks: basin/play reference table + geometry load + spatial join, then well search/detail/stats/basin FastAPI endpoints.",
+              "tasks": [
+                { "done": true, "text": "fmcsa_inspections/violations/entity_links/carriers tables" },
+                { "done": true, "text": "Heatmap + Risk score + Chameleon-check + Entity-graph + Inspections endpoints" },
+                { "done": true, "text": "Dark professional dashboard theme + data table polish + map visualization" },
+                { "done": false, "text": "Basin/play reference table + geometry load + spatial join", "owner": "agent" },
+                { "done": false, "text": "Well search/detail/stats/basin FastAPI endpoints", "owner": "agent" },
+                { "done": false, "text": "SQLite → PostGIS migration (wells, bridges, toll_zones)", "owner": "agent" },
+                { "done": false, "text": "Connection pooling + refresh orchestration cron", "owner": "agent" },
+                { "done": false, "text": "Refinery utilization + state energy + gas processing + crude movement", "owner": "agent" }
+              ],
+              "sprintsDone": 5
+            },
+            {
+              "id": "tollrouter",
+              "name": "TollRouter",
+              "icon": "🛣",
+              "desc": "SMB dispatcher tool · Axio-powered · Toll + bridge + hazmat routing",
+              "statusDot": "blue",
+              "badges": [{ "text": "STANDALONE PRODUCT ✓", "type": "standalone" }],
+              "sprintPct": 57,
+              "sprintColor": "#3b82f6",
+              "sprintLabel": "Sprint 3 — Authority Expansion + UI",
+              "sprintProgress": "4/7",
+              "nextAction": "DNS A record for tollrouter.nivio-optimize.com + upload authority expansion SQL to EC2",
+              "nextActionStatus": "15m👤",
+              "infoBar": "Bounding box FIXED · 10 authority rates scraped · Dispatcher UI BUILT · Freemium model done",
+              "agentPrompt": "Sprint 3 — Authority Expansion + UI for TollRouter. Set up DNS A record for tollrouter.nivio-optimize.com, then run certbot for SSL. SQL ready to expand from 21 → 40+ toll authorities.",
+              "tasks": [
+                { "done": true, "text": "Fix v1/tolls/estimate bounding box matching (route geometry state machine)" },
+                { "done": false, "text": "Expand toll authorities from 21 → 40+ (SQL ready, needs EC2 upload)", "owner": "kosta" },
+                { "done": true, "text": "Scrape and seed real toll rates for top 10 high-traffic authorities" },
+                { "done": true, "text": "Build React dispatcher UI scaffold (5 components + Leaflet + Zustand)" },
+                { "done": false, "text": "Set up DNS A record for tollrouter.nivio-optimize.com", "owner": "kosta" },
+                { "done": false, "text": "Run certbot for TollRouter SSL after DNS active", "owner": "agent" },
+                { "done": true, "text": "Design freemium credit model (free/starter/pro/enterprise tiers)" }
+              ],
+              "sprintsDone": 2
+            },
+            {
+              "id": "chameleon",
+              "name": "ChameleonTracker",
+              "icon": "🦎",
+              "desc": "Carrier fraud detection · Live in Axio · /v1/fmcsa/chameleon/*",
+              "statusDot": "blue",
+              "badges": [{ "text": "Endpoints Live ✓", "type": "deploy" }, { "text": "Standalone TBD", "type": "plan" }],
+              "sprintPct": 70,
+              "sprintColor": "#3b82f6",
+              "sprintLabel": "Sprint 2 — Fraud Detection MVP",
+              "sprintProgress": "7/10",
+              "nextAction": "Fraud detection live · Product pivoted · GTM scoping: buyer segment + pricing next",
+              "nextActionStatus": "Scoping",
+              "agentPrompt": "Sprint 2 — Fraud Detection MVP for ChameleonTracker. Validate buyer segment (broker or insurer first?). Identify 1-2 reference companies for outreach. Pricing decision (per-lookup vs subscription).",
+              "tasks": [
+                { "done": true, "text": "Entity-graph chameleon scoring (0-100) live on EC2" },
+                { "done": true, "text": "VIN cross-reference + officer/address linkage" },
+                { "done": true, "text": "7 fraud pattern taxonomy + no-competitor validation" },
+                { "done": true, "text": "Confirmed built status — live in Axio, not concept-stage" },
+                { "done": true, "text": "Product definition pivoted (carrier fraud, not freight visibility)" },
+                { "done": true, "text": "FMCSA + market research complete (buyers, competitors, pricing)" },
+                { "done": true, "text": "CONTEXT.md rewritten with standalone product definition" },
+                { "done": false, "text": "Validate buyer segment (broker or insurer first?)", "owner": "kosta" },
+                { "done": false, "text": "Identify 1-2 reference companies for outreach", "owner": "kosta" },
+                { "done": false, "text": "Pricing decision (per-lookup vs subscription)", "owner": "kosta" }
+              ],
+              "sprintsDone": 0
+            },
+            {
+              "id": "marketing",
+              "name": "Marketing_Nivio",
+              "icon": "📧",
+              "desc": "ActiveCampaign · 540 contacts · Both automations LIVE · BRO + Axio",
+              "statusDot": "green",
+              "badges": [{ "text": "Both Live ✓", "type": "deploy" }, { "text": "293 in sequences", "type": "ship" }],
+              "sprintPct": 0,
+              "sprintColor": "green",
+              "sprintLabel": "Sprint 3 — Monitor + Expand (W13)",
+              "sprintProgress": "0/9",
+              "nextAction": "Monitor: 211 Nivio → Email 3, 82 Axio → Email 1. Source 2 missing emails (Burch, Scavone).",
+              "nextActionStatus": "Active",
+              "agentPrompt": "Sprint 3 — Monitor + Expand for Marketing_Nivio. Monitor both automations. Verify Email 2 preheader. Delete orphaned AC campaigns 32-38.",
+              "tasks": [
+                { "done": false, "text": "Monitor Nivio automation — 211 contacts → Email 3", "owner": "agent" },
+                { "done": false, "text": "Monitor Axio automation — 82 contacts → Email 1", "owner": "agent" },
+                { "done": false, "text": "Source emails: Joshua Burch (Benchmark), Chris Scavone (Gulfmark)", "owner": "kosta" },
+                { "done": false, "text": "Delete orphaned AC campaigns 32-38", "owner": "kosta" },
+                { "done": false, "text": "Verify Email 2 preheader populated", "owner": "agent" }
+              ],
+              "sprintsDone": 2
+            },
+            {
+              "id": "driveriq",
+              "name": "DriverIQ",
+              "icon": "🛡️",
+              "desc": "Driver compliance + performance scoring · Samsara telematics · Kimrad pilot",
+              "statusDot": "blue",
+              "badges": [{ "text": "Building", "type": "build" }],
+              "sprintPct": 0,
+              "sprintColor": "#3b82f6",
+              "sprintLabel": "Sprint 2 — Analytics + Alerting",
+              "sprintProgress": "0/5",
+              "nextAction": "Wire service_role key (2 min) → unlocks 4 built analytics features",
+              "nextActionStatus": "Sprint 2",
+              "infoBar": "Sprint 1 COMPLETE (9/9) · 152 drivers · Alert rules migration APPLIED · 4 features BUILT",
+              "agentPrompt": "Sprint 2 — Analytics + Alerting for DriverIQ. Wire service_role key for nivio-driveriq Supabase first (2 min task). Then build Safety Analytics page and driver detail drill-down.",
+              "tasks": [
+                { "done": false, "text": "Safety Analytics page (fleet distribution, trends, worst categories)", "owner": "agent" },
+                { "done": false, "text": "Driver detail drill-down (40+ category breakdown, event timeline)", "owner": "agent" },
+                { "done": false, "text": "Fleet comparison view (side-by-side, outlier highlighting)", "owner": "agent" },
+                { "done": false, "text": "Automated alert rules — MIGRATION APPLIED ✅ (code BUILT, awaiting deploy)", "owner": "agent" },
+                { "done": false, "text": "Wire service_role key for nivio-driveriq Supabase", "owner": "kosta" }
+              ],
+              "sprintsDone": 1
+            },
+            {
+              "id": "lilbro",
+              "name": "Lil' BRO",
+              "icon": "🗺",
+              "desc": "Trucker route planner · Free tier · Real FMCSA/NBI/EIA data",
+              "statusDot": "green",
+              "badges": [{ "text": "v5 Live ✓", "type": "deploy" }, { "text": "React Rebuild", "type": "build" }],
+              "sprintPct": 20,
+              "sprintColor": "green",
+              "sprintLabel": "Sprint 2 — React Rebuild (1/5)",
+              "sprintProgress": "1/5",
+              "nextAction": "HTML prototype live · Next: React rebuild + Vercel deploy + Pro tier",
+              "nextActionStatus": "Active",
+              "agentPrompt": "Sprint 2 — React Rebuild for Lil' BRO. Scaffold React/Vite/TypeScript app. Wire email capture (AC or Supabase). Deploy to Vercel. Add Stripe Pro tier ($9.99/mo).",
+              "tasks": [
+                { "done": true, "text": "HTML prototype v1-v5 deployed on EC2" },
+                { "done": false, "text": "Scaffold React/Vite/TypeScript app", "owner": "agent" },
+                { "done": false, "text": "Wire email capture (AC or Supabase)" },
+                { "done": false, "text": "Deploy React to Vercel", "owner": "agent" },
+                { "done": false, "text": "Stripe Pro tier ($9.99/mo)" }
+              ],
+              "sprintsDone": 0
+            },
+            {
+              "id": "bigbro",
+              "name": "Big BRO",
+              "icon": "📊",
+              "desc": "Carrier Risk Intelligence · Bloomberg for trucking · 800K+ carriers",
+              "statusDot": "yellow",
+              "badges": [{ "text": "HTML Prototype", "type": "plan" }, { "text": "Needs React", "type": "build" }],
+              "sprintPct": 20,
+              "sprintColor": "yellow",
+              "sprintLabel": "Sprint 1 — React Foundation (1/5)",
+              "sprintProgress": "1/5",
+              "nextAction": "HTML prototype built (1,279 lines) · Needs React rebuild to wire live APIs",
+              "nextActionStatus": "Active",
+              "agentPrompt": "Sprint 1 — React Foundation for Big BRO. Scaffold React/Vite/TypeScript. Wire CarrierVet to live Axio /v1/carrier/* APIs. Deploy to Vercel. Wire Company Directory search.",
+              "tasks": [
+                { "done": true, "text": "HTML prototype validating UX (6 sections, pricing tiers)" },
+                { "done": false, "text": "Scaffold React/Vite/TypeScript", "owner": "agent" },
+                { "done": false, "text": "Wire CarrierVet to live Axio /v1/carrier/* APIs", "owner": "agent" },
+                { "done": false, "text": "Deploy to Vercel", "owner": "agent" },
+                { "done": false, "text": "Wire Company Directory search", "owner": "agent" }
+              ],
+              "sprintsDone": 0
+            },
+            {
+              "id": "bro",
+              "name": "BRO",
+              "icon": "🚛",
+              "desc": "Bulk Route Optimizer · Dispatch SaaS · EC2 3.225.0.197 · Partner co-build",
+              "statusDot": "yellow",
+              "badges": [{ "text": "DNS Live ✓", "type": "deploy" }, { "text": "Sprint 1 (W13)", "type": "build" }],
+              "sprintPct": 40,
+              "sprintColor": "yellow",
+              "sprintLabel": "Sprint 1 — Security Hardening (2/5)",
+              "sprintProgress": "2/5",
+              "nextAction": "DNS live · React frontend build validated · Security hardening needed",
+              "nextActionStatus": "Sprint 1",
+              "agentPrompt": "Sprint 1 — Security Hardening for BRO. Enable JWT auth + lock CORS origins. Configure nginx + SSL with certbot. Add rate limiting via nginx limit_req.",
+              "tasks": [
+                { "done": true, "text": "DNS verified: bro.nivio-optimize.com → 3.225.0.197" },
+                { "done": true, "text": "React frontend build validated (1.15s, 18 chunks)" },
+                { "done": false, "text": "Enable JWT auth + lock CORS origins", "owner": "kosta" },
+                { "done": false, "text": "Configure nginx + SSL with certbot", "owner": "kosta" },
+                { "done": false, "text": "Add rate limiting via nginx limit_req", "owner": "kosta" }
+              ],
+              "sprintsDone": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gr",
+      "name": "Greece Market",
+      "badge": "12 Projects",
+      "badgeColor": "red",
+      "extraNote": "greece-portfolio Supabase live — all migrations applied",
+      "brands": [
+        {
+          "id": "solid",
+          "name": "Solid Anadomisi",
+          "subtitle": "Construction digital stack · Athens · Nikos partnership · Separate Supabase",
+          "color": "#9f7aea",
+          "projects": [
+            {
+              "id": "solid-p",
+              "name": "Solid",
+              "icon": "🏗",
+              "desc": "Website live at anadomisi.tech · AI chatbot · CRM · Quote generator",
+              "statusDot": "green",
+              "badges": [{ "text": "Website Live ✓", "type": "deploy" }, { "text": "Sprint 1 (W12)", "type": "build" }],
+              "sprintPct": 80,
+              "sprintColor": "#9f7aea",
+              "sprintLabel": "Sprint 1 — MVP Scope Definition (W12)",
+              "sprintProgress": "4/5",
+              "nextAction": "MVP scope doc + schema + wireframes + nav all done · Nikos alignment call needed",
+              "nextActionStatus": "Blocked",
+              "agentPrompt": "Sprint 1 — MVP Scope Definition for Solid Anadomisi. Prerequisites: Nikos alignment call completed. Then: DNS pointing + email setup + HubSpot CRM activation.",
+              "tasks": [
+                { "done": true, "text": "MVP scope doc: screens, features, user flows for v1" },
+                { "done": true, "text": "Core database schema + Supabase migration SQL" },
+                { "done": true, "text": "Wireframe mockups (4 screens, responsive, construction palette)" },
+                { "done": true, "text": "Navigation + branding design (logo, sidebar, mobile nav)" },
+                { "done": false, "text": "Schedule alignment call with Nikos", "owner": "kosta" }
+              ],
+              "sprintsDone": 0
+            },
+            {
+              "id": "pliromi",
+              "name": "Pliromi",
+              "icon": "💳",
+              "desc": "Payment + invoicing SaaS · Stripe Connect + SEPA · Wired to Themelio schema",
+              "statusDot": "gray",
+              "badges": [{ "text": "Building", "type": "build" }, { "text": "Stripe Acct Needed", "type": "block" }],
+              "sprintPct": 60,
+              "sprintColor": "#9f7aea",
+              "sprintLabel": "Sprint 1 — Stripe Connect + SEPA Prototype",
+              "sprintProgress": "3/5",
+              "nextAction": "Schema wired + invoice cards + payment form built · Stripe Connect account needed",
+              "nextActionStatus": "Blocked",
+              "agentPrompt": "Sprint 1 — Stripe Connect + SEPA Prototype for Pliromi. Prerequisites: Create Stripe Connect test account. Then build payment flow prototype (card + SEPA with test keys).",
+              "tasks": [
+                { "done": true, "text": "Wire payment model to Themelio schema (migration + API stubs)" },
+                { "done": true, "text": "Invoice card layout (status badges, payment icons, responsive)" },
+                { "done": true, "text": "Payment checkout form (card/SEPA/bank transfer, dark borders)" },
+                { "done": false, "text": "Create Stripe Connect test account", "owner": "kosta" },
+                { "done": false, "text": "Build payment flow prototype (card + SEPA with test keys)", "owner": "agent" }
+              ],
+              "sprintsDone": 0
+            },
+            {
+              "id": "themelio",
+              "name": "Themelio",
+              "icon": "🏛",
+              "desc": "Construction ops platform · Building dashboard · Greek locale · Sprints 1-4 done",
+              "statusDot": "gray",
+              "badges": [{ "text": "Building", "type": "build" }, { "text": "Deploy Next", "type": "plan" }],
+              "sprintPct": 75,
+              "sprintColor": "#9f7aea",
+              "sprintLabel": "Sprint 5 — Deploy + Nikos Demo",
+              "sprintProgress": "3/4",
+              "nextAction": "`git push origin main` to deploy, then share URL with Nikos",
+              "nextActionStatus": "5m👤",
+              "agentPrompt": "Sprint 5 — Deploy + Nikos Demo for Themelio. `git push origin main` to trigger Vercel deploy. Share production URL + demo doc (13 feedback questions) with Nikos.",
+              "tasks": [
+                { "done": true, "text": "Deploy Next.js to Vercel (env vars, vercel.json, git init — needs push)" },
+                { "done": true, "text": "Create demo walkthrough doc for Nikos (13 feedback questions)" },
+                { "done": true, "text": "PDF export for expense reports (jsPDF, Greek locale, EUR currency)" },
+                { "done": false, "text": "Share production URL + demo doc with Nikos", "owner": "kosta" }
+              ],
+              "sprintsDone": 4
+            }
+          ]
+        },
+        {
+          "id": "gr-paideia",
+          "name": "Paideia",
+          "subtitle": "Greek language learning · AI-generated content · Gamified",
+          "color": "#34d399",
+          "projects": [
+            {
+              "id": "paideia",
+              "name": "Paideia",
+              "icon": "📚",
+              "desc": "953 flashcards · 535 quiz questions · Gamification live · paideia-app.netlify.app",
+              "statusDot": "blue",
+              "badges": [{ "text": "Deployed ✓", "type": "deploy" }, { "text": "Sprint 2 (W13)", "type": "build" }],
+              "sprintPct": 83,
+              "sprintColor": "#34d399",
+              "sprintLabel": "Sprint 2 — Gamification Engine + Hint System (W13)",
+              "sprintProgress": "10/12",
+              "nextAction": "Fix quiz_questions.options + deploy Edge Function (API key)",
+              "nextActionStatus": "20m",
+              "agentPrompt": "Sprint 2 — Gamification Engine + Hint System for Paideia. Fix quiz_questions.options — empty arrays in Supabase (CRITICAL). Deploy evaluate-answer Edge Function (needs API key from Kosta).",
+              "tasks": [
+                { "done": true, "text": "Subject mastery dashboard (verified on production)" },
+                { "done": true, "text": "Daily challenge system (verified on production)" },
+                { "done": true, "text": "Hint system redesign — 3-level scaffolded clues (verified on production)" },
+                { "done": true, "text": "Gamification UI polish (XP bars, badge icons, streak flames)" },
+                { "done": true, "text": "Mobile-first study session flow (card flip, bottom bar, progress ring)" },
+                { "done": false, "text": "Fix quiz_questions.options — empty arrays in Supabase", "owner": "kosta", "critical": true },
+                { "done": false, "text": "Deploy evaluate-answer Edge Function (needs API key)", "owner": "kosta" }
+              ],
+              "sprintsDone": 1
+            }
+          ]
+        },
+        {
+          "id": "gr-stack",
+          "name": "Restaurant Stack — ΠΤΚ",
+          "subtitle": "Estia + Kritiki + Provoli + Apografi · Greek restaurant OS",
+          "color": "#ef4444",
+          "projects": [
+            {
+              "id": "estia",
+              "name": "Estia (Εστία)",
+              "icon": "🏠",
+              "desc": "QSR ordering platform · efood + Wolt + Uber Eats aggregation · Own fleet evolution",
+              "statusDot": "teal",
+              "badges": [{ "text": "Building", "type": "build" }, { "text": "Sprint 1 ✓", "type": "deploy" }],
+              "sprintPct": 90,
+              "sprintColor": "#14b8a6",
+              "sprintLabel": "Sprint 2 — W14 Backend Integration (blocked on keys)",
+              "sprintProgress": "Blocked",
+              "nextAction": "Fork of GG Catering · React UI (7 pages) · Supabase live · Sprint 1 complete",
+              "nextActionStatus": "W14 backend",
+              "blocker": "Needs: efood Partner API · Wolt Merchant API · Viva Wallet · Viber Bot Token",
+              "agentPrompt": "Sprint 2 — W14 Backend Integration for Estia. Paste API keys: VITE_EFOOD_API_KEY=, VITE_WOLT_API_KEY=, VITE_VIVA_MERCHANT_ID=, VITE_VIBER_BOT_TOKEN=. Then deploy to Netlify.",
+              "tasks": [
+                { "done": false, "text": "efood Partner API key", "owner": "kosta" },
+                { "done": false, "text": "Wolt Merchant API key", "owner": "kosta" },
+                { "done": false, "text": "Viva Wallet merchant ID + API key", "owner": "kosta" },
+                { "done": false, "text": "Viber Bot API token", "owner": "kosta" },
+                { "done": false, "text": "Deploy to Netlify", "owner": "agent" }
+              ],
+              "sprintsDone": 1
+            },
+            {
+              "id": "kritiki",
+              "name": "Kritiki (Κριτική)",
+              "icon": "⭐",
+              "desc": "Greek feedback + reputation · Viber-first fork of Checkback · 75K restaurants",
+              "statusDot": "gray",
+              "badges": [{ "text": "Planning", "type": "plan" }],
+              "sprintPct": 5,
+              "sprintColor": "#ef4444",
+              "note": "Fork Checkback → swap Twilio for Viber Bot API + Greek UI. Google + TripAdvisor + FB reviews. Starts after Checkback remodel stabilizes."
+            },
+            {
+              "id": "provoli",
+              "name": "Provoli (Προβολή)",
+              "icon": "📣",
+              "desc": "Restaurant marketing autopilot · Google/Meta ads · Viber CRM · €0 competition in GR",
+              "statusDot": "gray",
+              "badges": [{ "text": "Planning", "type": "plan" }],
+              "sprintPct": 5,
+              "sprintColor": "#ef4444",
+              "note": "5 modules: Google Business autopilot, Meta/Google campaigns, Viber CRM, catering lead engine, social autopilot. Needs Meta/Google API partner access."
+            },
+            {
+              "id": "apografi",
+              "name": "Apografi (Απογραφή)",
+              "icon": "🧾",
+              "desc": "myDATA e-invoicing · Oct 2026 mandate · 600K businesses · 60+ Supabase tables",
+              "statusDot": "orange",
+              "badges": [{ "text": "Building", "type": "build" }, { "text": "Schema Live ✓", "type": "deploy" }],
+              "sprintPct": 80,
+              "sprintColor": "#f97316",
+              "sprintLabel": "Sprint 2 — Foundation + Schema (W13)",
+              "sprintProgress": "4/5",
+              "nextAction": "Schema verified (60+ tables, AADE-compliant) · App scaffold decision needed",
+              "nextActionStatus": "Active",
+              "agentPrompt": "Sprint 2 — Foundation + Schema for Apografi. Scaffold Vite + React + Tailwind app with Greek locale. 60+ tables confirmed, AADE myDATA XSD v2.0.1 schemas reviewed.",
+              "tasks": [
+                { "done": true, "text": "Verify Supabase project (60+ tables confirmed)" },
+                { "done": true, "text": "Shared businesses table with AFM, RLS policies verified" },
+                { "done": true, "text": "Apografi schema: invoices, invoice_items, mydata_submissions (AADE-compliant)" },
+                { "done": true, "text": "AADE myDATA XSD schemas reviewed (v2.0.1, B2B mandate May 2)" },
+                { "done": false, "text": "Scaffold Vite + React + Tailwind app with Greek locale", "owner": "kosta" }
+              ],
+              "sprintsDone": 4
+            }
+          ]
+        },
+        {
+          "id": "gr-other",
+          "name": "Other Greece",
+          "subtitle": "",
+          "color": "#f97316",
+          "projects": [
+            {
+              "id": "athlisi",
+              "name": "Athlisi (Άθληση)",
+              "icon": "⚽",
+              "desc": "Multi-sport platform · 25+ Supabase tables · Schema verified",
+              "statusDot": "orange",
+              "badges": [{ "text": "Building", "type": "build" }, { "text": "Schema Live ✓", "type": "deploy" }],
+              "sprintPct": 80,
+              "sprintColor": "#f97316",
+              "sprintLabel": "Sprint 2 — Foundation + Schema (W13)",
+              "sprintProgress": "4/5",
+              "nextAction": "Schema verified · Legal requirements researched · Domains: recommend .app · App scaffold next",
+              "nextActionStatus": "Active",
+              "agentPrompt": "Sprint 2 — Foundation + Schema for Athlisi. Scaffold Vite + React + Tailwind app with Greek locale. 25+ tables in greece-portfolio Supabase.",
+              "tasks": [
+                { "done": true, "text": "Design + verify Athlisi schema (25+ tables in greece-portfolio Supabase)" },
+                { "done": true, "text": "Apply tables to greece-portfolio Supabase with RLS policies" },
+                { "done": true, "text": "Domain check: athlisi.gr/.com taken, recommend .app TLD" },
+                { "done": true, "text": "Research Greek sports club registration requirements (N. 2725/1999)" },
+                { "done": false, "text": "Scaffold Vite + React + Tailwind app with Greek locale", "owner": "kosta" }
+              ],
+              "sprintsDone": 4
+            },
+            {
+              "id": "agrotis",
+              "name": "Agrotis (Ο Αγρότης)",
+              "icon": "🌿",
+              "desc": "Grove-to-consumer olive oil · Harvest aggregation · Pilot Oct 2026",
+              "statusDot": "gray",
+              "badges": [{ "text": "Planning W20+", "type": "plan" }],
+              "sprintPct": 0,
+              "sprintColor": "#64748b",
+              "note": "Phase 1 starts W20 (May 2026). Laconia/Messinia pilot. €50-100K capital needed. Connected to Apografi for grower invoicing. Investor relationship (Rock/Mallios) pending."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "crossBrand": [
+    {
+      "id": "briefcase",
+      "name": "Briefcase",
+      "icon": "💼",
+      "desc": "Contextual intelligence at the moment of contact — AI briefing cards for every inbound message/call",
+      "statusDot": "blue",
+      "badges": [{ "text": "Building", "type": "build" }, { "text": "Standalone", "type": "standalone" }],
+      "sprintPct": 45,
+      "sprintColor": "green",
+      "sprintLabel": "Phase 1 — Brain + Viber + WhatsApp",
+      "sprintProgress": "45%",
+      "nextAction": "FastAPI backend + Supabase schema built. Viber & WhatsApp handlers ready.",
+      "nextActionStatus": "Active",
+      "blocker": "Viber Bot token — waiting on Viber review. WhatsApp phone ID — Meta rate limited.",
+      "infoBar": "Remora architecture: parasitic integrations on existing platforms. Greece-first market.",
+      "agentPrompt": "Phase 1 — Brain + Viber + WhatsApp for Briefcase. Deploy backend to public URL. First end-to-end message → briefing test. Android overlay prototype.",
+      "tasks": [
+        { "done": true, "text": "Product concept doc + ecosystem diagram" },
+        { "done": true, "text": "Supabase project (eu-west-1) + 8 tables + RLS + cron" },
+        { "done": true, "text": "FastAPI backend: Viber + WhatsApp webhooks, briefing engine, identity resolution" },
+        { "done": true, "text": "WhatsApp Business API token obtained" },
+        { "done": true, "text": "Viber Business Account created" },
+        { "done": false, "text": "Viber Bot auth token (waiting on review)", "owner": "kosta", "blocker": true },
+        { "done": false, "text": "WhatsApp phone number ID (Meta rate limit)", "owner": "kosta" },
+        { "done": false, "text": "Deploy backend to public URL" },
+        { "done": false, "text": "First end-to-end message → briefing test" },
+        { "done": false, "text": "Android overlay prototype" }
+      ],
+      "roadmap": [
+        { "color": "green", "text": "Phase 1: Brain + Viber/WhatsApp webhooks + Android overlay" },
+        { "color": "blue", "text": "Phase 2: Desktop companion + email sync + Chrome extension" },
+        { "color": "gray", "text": "Phase 3: iOS, CRM widgets, Slack bot, multi-user" }
+      ]
+    }
+  ],
+  "potential": [
+    {
+      "id": "skiniq-p",
+      "name": "SkinIQ",
+      "color": "#ec4899",
+      "desc": "Greek-inspired skincare brand · DTC + App · Christina as influencer face",
+      "note": "DTC product line + skin analysis app. Prior brainstorm exists. Needs re-scope."
+    }
+  ]
+}
